@@ -19,11 +19,15 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
   const data = {
       person: {
-        firstName: 'Tom',
-        lastName: 'Scott',
+        firstName: 'Gian',
+        lastName: 'Delprado',
       }
   }
   res.render('index', data);
+});
+
+app.get('/projects', (req, res) => {
+  res.render('projects');
 });
 
 app.get('/contact', (req, res) => {
@@ -31,16 +35,16 @@ app.get('/contact', (req, res) => {
 });
 
 app.post('/thanks', (req, res) => {
+  const contact = req.body;
   res.render('thanks', { contact: req.body })
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-  console.log(process.env.SENDGRID_API_KEY);
   const msg = {
     to: 'gian.delprado94@gmail.com',
-    from: 'test@example.com',
-    subject: 'Sending with Twilio SendGrid is Fun',
-    text: 'and easy to do anywhere, even with Node.js',
-    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+    from: contact.email,
+    subject: `${contact.firstName} ${contact.lastName} from ${contact.company}: ${contact.subject}.`,
+    text: contact.text
   };
+  console.log(msg);
   sgMail.send(msg);
 });
 
