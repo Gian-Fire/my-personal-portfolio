@@ -51,3 +51,5 @@ app.post('/thanks', (req, res) => {
 app.listen(process.env.PORT, () => {
   console.log(`listening at http://localhost:${process.env.PORT}`);
 });
+
+module.exports = app;
