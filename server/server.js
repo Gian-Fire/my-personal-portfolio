@@ -44,7 +44,6 @@ app.post('/thanks', (req, res) => {
     subject: `${contact.firstName} ${contact.lastName} from ${contact.company}: ${contact.subject}.`,
     text: contact.text
   };
-  console.log(msg);
   sgMail.send(msg);
 });
 
