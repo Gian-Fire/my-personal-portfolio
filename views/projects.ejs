@@ -1,67 +1,149 @@
 <html>
-
+  
   <head>
     <title>Gian Projects</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="/css/style.css" rel="stylesheet" type="text/css">
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="/">Gian's Portfolio</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:grey; ">
+      <a class="navbar-brand" href="/" style='color: maroon'>Gian's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/" style='color: maroon'>Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/projects">Projects</a>
+            <a class="nav-link" href="/projects" style='color: maroon'>Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact Me</a>
+            <a class="nav-link" href="/contact" style='color: maroon'>Contact Me</a>
           </li>
         </ul>
       </div>
     </nav>
+  </head>
 
-    <div class='text-center'>
-      <h3>Build with React:</h3>
+  <body>
+
+    <div class='jumbotron text-center' style='color: maroon'>
+      <h3>Projects</h3>
     </div>
-    <ul>
+
+    <div class='card col-md-11 mx-auto' style='color: maroon; margin-bottom: 20px'>
+      <div class='card-header'>
+        <h3>Recent Projects</h3>
+      </div>
+      <div class='card-body'>
+        <div>
+          <h5>
+            <a href='https://github.com/SanDiegoCodeSchool/lti-node-library' style='color: maroon'>
+              <u>( Node LTI Library )</u> =>  
+            </a>
+            <a href='https://www.npmjs.com/package/lti-node-library' style='color: maroon'>
+              <u>{ Npm Package }</u>
+            </a>
+          </h5>
+          <p>Published Npm tool provider library that conforms to the Ims-Global LTI v1.3 standard of security.</p>
+        </div>
+        <div>
+          <h5>
+            <a href='https://github.com/SanDiegoCodeSchool/lti-node-example' style='color: maroon'>
+              <u>Node LTI Example</u>
+            </a>
+          </h5>
+          <p>Example that utilizes the Node LTI Library and creates an example tool that can be used on multiple educational platforms. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class='card col-md-11 mx-auto' style='color: maroon; margin-bottom: 20px'>
+      <div class='card-header'>
+        <h3>Built with React</h3>
+      </div>
+      <ul class='card-body'>
+        <div>
+          <h5>
+            <a href='https://gd-react200-weather-app.herokuapp.com/' style='color: maroon'>
+              <u>Weather App</u>
+            </a>
+          </h5>
+          
+          <p>An app built with <u>Redux</u> that searches for the weather, using the Open Weather Map api, of every city in the world.</p>
+        </div>
+        <div>
+          <h5>
+            <a href='https://gd-movie-finder-app.herokuapp.com/' style='color: maroon'>
+              <u>Movie Finder</u>
+            </a>
+          </h5>
+          <p>An app built with <u>Redux</u> that searches for movies using the OMDB api and returns a list of movies.</p>
+        </div>
+        <div>
+          <h5>
+            <a href='https://gd-react100-change-calculator.herokuapp.com' style='color: maroon'>
+              <u>Change Calculator</u>
+            </a>
+          </h5>
+            <p>An app that calculates the total change due and amount require for each denomination of USD.</p>
+        </div>
+        <div>
+            <h5>
+              <a href='https://gd-react100-mortgage-calc.herokuapp.com/' style='color: maroon'>
+                <u>Mortgage Calculator</u>
+              </a>
+            </h5>
+              <p>An app that calculates the monthly mortgage paymeny in USD.</p>
+        </div>
+        <div>
+            <h5>
+              <a href='https://gd-react100-top-spots.herokuapp.com/' style='color: maroon'>
+                <u>San Diego Top Spots</u>
+              </a>
+            </h5>
+              <p>A list of the top 30 places to see in San Diego, California.</p>
+        </div>
+        <div>
+            <h5>
+              <a href='https://gd-react100-vstda.herokuapp.com/' style='color: maroon'>
+                <u>VSTDA</u>
+              </a>
+            </h5>
+              <p>An app that tracks your list of todos for the day.</p>
+        </div>
+      </ul>
+    </div>
+
+    <div class='card col-md-11 mx-auto' style='color: maroon; margin-bottom: 20px'>
+      <div class='card-header'>
+        <h3>Other Projects</h3>
+      </div>
+      <div class='card-body'>
+        <!-- <div>
+          <h5>
+            <a href=''>
+              <u></u>
+            </a>
+          </h5>
+          <p></p>
+        </div>
+      </div>
       <div>
         <h5>
-          <a href='https://gd-react100-change-calculator.herokuapp.com'>Change Calculator</a>
+          <a href=''>
+            <u></u>
+          </a>
         </h5>
-          <p>An app that calculates the total change due and amount require for each denomination of USD.</p>
+        <p></p>
+      </div> -->
+      <div class='text-center' style='color: maroon'>
+        <h3>Github</h3>
+        <a href='https://github.com/gianfiyah' style='color: maroon'><u>See my all my source code.</u></a>
       </div>
-      <div>
-          <h5>
-            <a href='https://gd-react100-mortgage-calc.herokuapp.com/'>Mortgage Calculator</a>
-          </h5>
-            <p>An app that calculates the monthly mortgage paymeny in USD.</p>
-      </div>
-      <div>
-          <h5>
-            <a href='https://gd-react100-top-spots.herokuapp.com/'>San Diego Top Spots</a>
-          </h5>
-            <p>A list of the top 30 places to see in San Diego, California</p>
-      </div>
-      <div>
-          <h5>
-            <a href='https://gd-react100-vstda.herokuapp.com/'>VSTDA</a>
-          </h5>
-            <p>An app that tracks your list of todos for the day.</p>
-      </div>
-    </ul>
-
-    <div class='text-center'>
-      <h3>Github:</h3>
-      <a href='https://github.com/gianfiyah'>See my all my source code.</a>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
