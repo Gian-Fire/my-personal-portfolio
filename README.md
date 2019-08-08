@@ -6,4 +6,4 @@ This portfolio is built using Ejs templating, Express/Router and uses the SendGr
 
 ## Check it out!
 
-You can find my porfolio here: [Gian's Portfolio]: https://gianfiyah-portfolio.herokuapp.com/
+You can find my porfolio here: [Gian's Portfolio](https://gianfiyah-portfolio.herokuapp.com/ "Gian's Portfolio")
