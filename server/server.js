@@ -34,6 +34,10 @@ app.get('/contact', (req, res) => {
   res.render('contact');
 });
 
+app.get('/dingdong', (req, res) => {
+  res.render('slackbot');
+});
+
 app.post('/thanks', (req, res) => {
   const contact = req.body;
   res.render('thanks', { contact: req.body })
