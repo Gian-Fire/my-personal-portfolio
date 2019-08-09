@@ -1,0 +1,29 @@
+{
+  "name": "personal-portfolio",
+  "version": "0.1.0",
+  "description": "My personal portfolio builtin Express/router and EJS.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "mocha test --exit"
+  },
+  "author": "GianFiyah",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.1"
+  }
+}
