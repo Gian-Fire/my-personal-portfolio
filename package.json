@@ -1,22 +1,17 @@
 {
-  "name": "node200-ejs-portfolio",
+  "name": "personal-portfolio",
   "version": "0.1.0",
-  "description": "My Personal Portfolio",
+  "description": "My personal portfolio builtin Express/router and EJS.",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "start": "node server/server.js",
     "test": "mocha test --exit"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GianFiyah/my-personal-porfolio.git"
-  },
   "author": "GianFiyah",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/GianFiyah/my-personal-porfolio/issues"
-  },
-  "homepage": "https://github.com/GianFiyah/my-personal-porfolio#readme",
   "dependencies": {
     "@sendgrid/mail": "^6.4.0",
     "body-parser": "^1.19.0",
